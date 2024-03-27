@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+  <TextView
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Aura News"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:textSize="30sp"
+    />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/probar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+  <HorizontalScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:queryHint="Search News"
+        android:layout_gravity="center"
+        android:id="@+id/search_btn"
+        />
+    <Button
+        android:id="@+id/btn_gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERAL"
+        android:layout_margin="6dp"
+        android:textColor="@color/white"
+        android:background="@color/my_primary"
+        />
+
+    <Button
+
+        android:id="@+id/btn_ent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTERTAINMENT"
+        android:layout_margin="6dp"
+        android:textColor="@color/white"
+        android:background="@color/my_primary"
+        />
+
+    <Button
+        android:id="@+id/btn_sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPORTS"
+        android:layout_margin="6dp"
+        android:textColor="@color/white"
+        android:background="@color/my_primary"
+        />
+    <Button
+        android:id="@+id/btn_business"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUSINESS"
+        android:layout_margin="6dp"
+        android:textColor="@color/white"
+        android:background="@color/my_primary"
+        />
+    <Button
+        android:id="@+id/btn_tech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TECHNICAL"
+        android:layout_margin="6dp"
+        android:textColor="@color/white"
+        android:background="@color/my_primary"
+        />
+    <Button
+        android:id="@+id/btn_health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HEALTH"
+        android:layout_margin="6dp"
+        android:textColor="@color/white"
+        android:background="@color/my_primary"
+        />
+    <Button
+        android:id="@+id/btn_science"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCIENCE"
+        android:layout_margin="6dp"
+        android:textColor="@color/white"
+        android:background="@color/my_primary"
+        />
+
+</LinearLayout>
+  </HorizontalScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/news_recycler_item"
+        android:orientation="vertical"
+        />
+
+</LinearLayout>
